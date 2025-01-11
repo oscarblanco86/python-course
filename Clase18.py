@@ -57,28 +57,27 @@
 
 # Un generador es una función que produce una secuencia de valores sobre los cuales se puede iterar, usando la palabra clave yield en lugar de return. Aquí hay un ejemplo básico:
 
-# def mi_generador():
-#     yield 1
-#     yield 2
-#     yield 3
+def mi_generador():
+    yield 1
+    yield 2
+    yield 3
 
 # # Usar el generador
-# for valor in mi_generador():
-#     print(valor)
+for valor in mi_generador():
+    print(valor)
 
 # ¿Cómo crear un generador para la serie de Fibonacci?
 
 # La serie de Fibonacci es una secuencia donde cada número es la suma de los dos anteriores. Podemos crear un generador para producir esta serie:
-
-# def fibonacci(limite):
-#     a, b = 0, 1
-#     while a < limite:
-#         yield a
-#         a, b = b, a + b
+def fibonacci(limite):
+    a, b = 0, 1
+    while a < limite:
+        yield a
+        a, b = b, a + b
 
 # # Usar el generador para la serie de Fibonacci hasta 10
-# for numero in fibonacci(10):
-#     print(numero)
+for numero in fibonacci(10):
+    print(numero)
 
 # Ejemplo de iterador
 
